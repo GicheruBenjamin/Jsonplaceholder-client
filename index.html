@@ -5,12 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments and Posts</title>
     <style>
+        /*Import Google fonts - Poppins , raleway and montserrat*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+        /*raleway*/
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+        /*Montserrat*/
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        :root{
+            /*black , gold and grey colors*/
+            --black: #000;
+            --gold: #ffd700;
+            --grey: #808080;
+            --white: #fff;
+            /*font-families*/
+            --font-family-poppins: 'Poppins', sans-serif;
+            --font-family-raleway: 'Raleway', sans-serif;
+            --font-family-montserrat: 'Montserrat', sans-serif;
+            /*font-sizes*/
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-md: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-xxl: 1.5rem;
+            --font-size-xxxl: 1.75rem;
+            --font-size-xxxxl: 2.5rem;
+
+            /*font-weights*/
+            --font-weight-thin: 100;
+            --font-weight-extra-light: 200;
+            --font-weight-light: 300;
+            --font-weight-regular: 400;
+            --font-weight-medium: 500;
+            --font-weight-semi-bold: 600;
+            --font-weight-bold: 700;
+            --font-weight-extra-bold: 800;
+            --font-weight-black: 900;
+
+            /*line-heights*/
+            --line-height-xs: 1;
+            --line-height-sm: 1.25;
+            --line-height-md: 1.5;
+            --line-height-lg: 1.75;
+            --line-height-xl: 2;
+
+            /*letter-spacings*/
+            --letter-spacing-wide: 0.02em;
+            --letter-spacing-narrow: 0.01em;
+
+        }
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0; padding: 0;
+        }
+        header {
+            background: var(--gold);
+            color: var(--black);
+        }
+        header h1 {
+            margin: 0;
+            padding: 10px;
+            font-family: var(--font-family-poppins);
+            font-size: var(--font-size-xxl);
+            font-weight: var(--font-weight-extra-bold);
+            line-height: var(--line-height-xxl);
         }
         h2 {
             color: #333;
+            font-family: var(--font-family-montserrat);
+            font-size: var(--font-size-md);
+            font-weight: var(--font-weight-semi-bold);
+            line-height: var(--line-height-md);
+            letter-spacing: var(--letter-spacing-wide);
         }
         ul {
             list-style-type: none;
@@ -22,10 +87,18 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             background: #f9f9f9;
+            font-family: var(--font-family-raleway);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-regular);
+            line-height: var(--line-height-sm); 
+            letter-spacing: var(--letter-spacing-narrow);
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Comments and Posts</h1>
+    </header>
     <main>
         <section>
             <h2>Comments</h2>
